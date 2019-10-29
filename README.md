@@ -45,10 +45,14 @@ To make master node not run any jobs set executions jobs to 0 and let slave node
 
 
 
+
 Pipeline{
+
    agent any{
+   
       stages{
-      ANY CONDITIONS
+      
+      #ANY CONDITIONS
       
         stage('Checkout'){
           git url: "URL"
@@ -62,6 +66,7 @@ Pipeline{
       }
     }
 }
+
 
 Tools for codeTesting Automation or CodeQuality control:
 JaCoCo, Clover, and Cobertura
