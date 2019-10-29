@@ -1,6 +1,7 @@
 # Coding-
 
-#curl -4 icanhazip.com
+#curl -4 icanhazip.com -to get ip-address from pinging from thirdparty website
+
 #DOCKER:
 
 docker info 
