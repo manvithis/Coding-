@@ -71,4 +71,5 @@ Pipeline{
 Tools for codeTesting Automation or CodeQuality control:
 JaCoCo, Clover, and Cobertura
 
+##alternative to CQ:sonarQube
 
