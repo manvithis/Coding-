@@ -97,5 +97,5 @@ JaCoCo, Clover, and Cobertura
           mail to: 'team@company.com',
           subject: "Completed Pipeline: ${currentBuild.fullDisplayName}",
           body: "Your build completed, please check: ${env.BUILD_URL}"
-     }
-}
+            }
+      }
