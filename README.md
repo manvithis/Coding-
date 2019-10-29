@@ -99,3 +99,12 @@ JaCoCo, Clover, and Cobertura
           body: "Your build completed, please check: ${env.BUILD_URL}"
             }
       }
+always: Execute regardless of the completion status
+
+changed: Execute only if the pipeline changed its status
+
+failure: Execute only if the pipeline has the failed status
+
+success: Execute only if the pipeline has the success status
+
+unstable: Execute only if the pipeline has the unstable status (usually caused by test failures or code violations)
