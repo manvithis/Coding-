@@ -49,6 +49,7 @@ Pipeline{
    agent any{
       stages{
       ANY CONDITIONS
+      
         stage('Checkout'){
           git url: "URL"
         }
