@@ -46,30 +46,34 @@ To make master node not run any jobs set executions jobs to 0 and let slave node
 
 
 
-Pipeline{
+      Pipeline{
 
-   agent any{
+         agent any{
    
-      stages{
-      
-      #ANY CONDITIONS
-      
-        stage('Checkout'){
-          git url: "URL"
-        }
-        stage('compile'){
-        }
-        stage('test'){
-        }
-        stage('deplot'){
-        }
+            stages{
+
+            #ANY CONDITIONS
+
+              stage('Checkout'){
+                git url: "URL"
+              }
+              stage('compile'){
+              }
+              stage('test'){
+              }
+              stage('deplot'){
+              }
+            }
+          }
       }
-    }
-}
 
 
 Tools for codeTesting Automation or CodeQuality control:
 JaCoCo, Clover, and Cobertura
 
 ##alternative to CQ:sonarQube
+ 
+     triggers {
+      pollSCM('* * * * *')
+      }
 
