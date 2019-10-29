@@ -38,3 +38,31 @@ docker rm $(docker ps --no-trunc -aq)
 
 
 
+
+# jenkins:
+
+To make master node not run any jobs set executions jobs to 0 and let slave nodes handle them
+
+
+
+Pipeline{
+   agent any{
+      stages{
+      ANY CONDITIONS
+        stage('Checkout'){
+          git url: "URL"
+        }
+        stage('compile'){
+        }
+        stage('test'){
+        }
+        stage('deplot'){
+        }
+      }
+    }
+}
+
+Tools for codeTesting Automation or CodeQuality control:
+JaCoCo, Clover, and Cobertura
+
+
