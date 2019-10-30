@@ -22,6 +22,7 @@ docker rm $CONTAINER_id
 Dockerfile:
 docker run -t NAME .
 
+# Dockerfile
 FROM
 RUN
 COPY
@@ -29,6 +30,7 @@ CMD
 ENTRYPOINT
 
 os.environ[NAME]
+
 docker run -e NAME=$$$$ for running the environment variables
 
 *If the environment variable is defined both in Dockerfile and as a flag, then the command flag takes precedence.
