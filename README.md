@@ -108,3 +108,9 @@ failure: Execute only if the pipeline has the failed status
 success: Execute only if the pipeline has the success status
 
 unstable: Execute only if the pipeline has the unstable status (usually caused by test failures or code violations)
+
+
+
+
+
+# kubernetes
