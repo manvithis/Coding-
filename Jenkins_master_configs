@@ -1,0 +1,12 @@
+#Dockerfile for master to instal and setup the docker plugin 
+
+
+FIlE(executors.groovy)
+import jenkins.model.*
+Jenkins.instance.setNumExecutors(5)
+
+
+FROM jenkins/jenkins:2.150.3
+COPY executors.groovy 
+      /usr/share/jenkins/ref/init.groovy.d/executors.groovy
+RUN /usr/local/bin/install-plugins.sh docker-plugin
