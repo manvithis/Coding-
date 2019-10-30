@@ -72,7 +72,7 @@ To make master node not run any jobs set executions jobs to 0 and let slave node
 Tools for codeTesting Automation or CodeQuality control:
 JaCoCo, Clover, and Cobertura
 
-##alternative to CQ:sonarQube
+##alternative to CQ:sonarQube  :Learn this thing by MID_NOV
  
      triggers {
       pollSCM('* * * * *')
