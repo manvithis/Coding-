@@ -1,1 +1,10 @@
 
+We start out with lots of individual specialized services. Some serve web pages, some perform authentication, some perform searches, others persist data. Kubernetes comes along — a bit like the coach in the football analogy — organizes everything into a useful app and keeps things running smoothly. It even responds to changes in circumstances.
+
+In the sports world, we call this coaching. In the application world, we call it orchestration. Kubernetes is an orchestrator.
+
+To make this happen, we start out with an app, package it up, and give it to the cluster (Kubernetes). The cluster is made up of one or more masters and a bunch of nodes.
+
+The masters, sometimes called heads or head nodes, are in charge of the cluster. This means they make the scheduling decisions, perform monitoring, implement changes, respond to events, and more. For these reasons, we often refer to the masters as the control plane.
+
+The nodes are where application services run, and we sometimes call them the data plane. They have a reporting line back to the masters, and constantly watch for new work assignments.
