@@ -1,0 +1,13 @@
+kubectl run <name> --image=<name> --replicas=<number> --port=<> -n <namespace> --labels=<key:value> -o yams --dry-run > pod.yaml
+
+
+kubectl set replicas deployment/<name> --replicas=5
+
+
+kubectl config set-context --current -namespace=<namespace you want> 
+
+kubectl rollout status deploy/<name>
+kubectl rollout history
+kubectl rollout undo deployment/<name> --version=<>?
+
+kubectl label node <nodename> name=label && use nodeSelector in spec. in pod
