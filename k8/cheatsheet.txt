@@ -11,3 +11,9 @@ kubectl rollout history
 kubectl rollout undo deployment/<name> --version=<>?
 
 kubectl label node <nodename> name=label && use nodeSelector in spec. in pod
+
+kubectl scale deploy/<name> replicas=5
+
+# Need to have metric installed on all the nodes.
+kubectl autoscale deploy/<name> --min=2 --max=5
+
